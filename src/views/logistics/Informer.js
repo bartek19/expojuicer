@@ -7,7 +7,7 @@ import {
   ExhibitionSpace,
   Shipment,
   Assembly,
-  Upgrade
+  // Upgrade
 } from './components/';
 
 
@@ -31,7 +31,7 @@ const Informer = ({translate, Heading }) => (
 
         <ExhibitionSpace />
 
-        <Upgrade />
+        {/* <Upgrade /> */}
 
       </Wrapper>
     </Tab>

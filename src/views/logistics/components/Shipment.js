@@ -1,6 +1,8 @@
 import React from 'react';
 import {translate} from 'admin-on-rest';
 import Divider from 'material-ui/Divider';
+import { Link } from 'react-router-dom';
+
 
 
 import * as Typo from '../../../components/Typography';
@@ -23,8 +25,20 @@ const Shipment = ({translate}) => (
 
     </Important>
 
+    <Typo.Subheading label="informer.shipment.contact_number" />
+
+
 
     <Important label="informer.shipment.deliver" />
+
+    <Divider></Divider>
+
+    <div style={{marginTop: 50}}>
+
+      <Typo.Subheading label="informer.shipment.fill_in_form" />
+      <Typo.Subheading label={<a href="https://docs.google.com/forms/d/e/1FAIpQLSe3iOY_zHsqu_WQGd-wt6PKXOdel9xmVcbkpjo8qldAI6iMOg/viewform" target="_blank">{translate('informer.shipment.form')}</a>} />
+
+    </div>
 
     <Divider></Divider>
 
